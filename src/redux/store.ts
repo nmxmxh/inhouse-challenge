@@ -8,7 +8,6 @@ import { countriesApi } from "./features/countries.slice";
 const persistConfig = {
   key: "ovasabi-persist",
   storage,
-  blacklist: ["options"],
 };
 
 const rootReducer = combineReducers({
