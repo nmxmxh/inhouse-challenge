@@ -72,7 +72,7 @@ export default function Page() {
   );
 }
 
-export const Style = {
+const Style = {
   Container: styled.main<{ $theme: "dark" | "light" }>`
     height: 87.5%;
     width: 100%;
