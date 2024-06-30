@@ -28,7 +28,7 @@ export default function Page() {
         filteredByRegion = _.filter(error ? FALLBACK_COUNTRIES_DATA : data, (country: any) => {
           return country.region.toLowerCase() === region.toLowerCase();
         });
-      } else filteredByRegion = data;
+      } else filteredByRegion = error ? FALLBACK_COUNTRIES_DATA : data;
 
       let filterByInput;
       if (filter) {
