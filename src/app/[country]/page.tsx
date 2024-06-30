@@ -117,7 +117,7 @@ export default function Page({ params }: { params: any }) {
   );
 }
 
-export const Style = {
+const Style = {
   Container: styled.main<{ $theme: "dark" | "light" }>`
     height: 87.5%;
     width: 100%;
