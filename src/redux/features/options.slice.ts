@@ -5,7 +5,7 @@ interface OptionsState {
   theme: "light" | "dark";
 }
 
-const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const defaultDark = window?.matchMedia("(prefers-color-scheme: dark)").matches;
 
 const initialState: OptionsState = {
   theme: defaultDark ? "dark" : "light",
